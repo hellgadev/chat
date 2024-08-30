@@ -13,12 +13,6 @@ class ThreadSerializer(serializers.ModelSerializer):
         fields = ALL_FIELDS
         model = Thread
 
-    def create(self, validated_data):
-        existing_tread = Thread.objects.filter(participants__in=[validated_data['participants']])
-        if existing_tread.exists():
-            return existing_tread
-        return super().create(validated_data)
-
 
 class ThreadCreateSerializer(serializers.ModelSerializer):
     participants = serializers.PrimaryKeyRelatedField(

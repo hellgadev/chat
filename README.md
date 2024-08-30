@@ -1,6 +1,6 @@
-# chat
+# Chat
 
-## ABOUT
+## About
 This repository hosts the code for a rest api implementation of the simple chat
 
 
@@ -35,7 +35,7 @@ python3 manage.py runserver localhost:8000
 ```
 
 ### Apply the dump 
-####  Install SQLite cli 
+Install SQLite cli 
 ```bash
 sudo apt install sqlite3
 ```
